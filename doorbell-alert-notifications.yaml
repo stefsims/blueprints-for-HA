@@ -23,7 +23,7 @@ blueprint:
       default: There is Somebody at the Door!
     language:
       name: Language
-      description: The language for the Google Announcement, fx. en-US, en-GB, en-IE or de-DE (default is danish)
+      description: The language for the Google Announcement, fx. en-US, en-GB, en-IE or de-DE (default is da-DK aka danish)
       default: da-DK
     camera:
       name: Camera
