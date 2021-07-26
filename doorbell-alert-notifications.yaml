@@ -23,7 +23,7 @@ blueprint:
       default: There is Somebody at the Door!
     language:
       name: Language
-      description: The language for the Google Announcement, fx. en-US, en-GB, en-IE or de-DE (default is da-DK aka danish)
+      description: 'The language for the Google Announcement, fx. en-US, en-GB, en-IE or de-DE (Default is da-DK aka danish.)'
       default: da-DK
     camera:
       name: Camera
@@ -103,6 +103,6 @@ action:
     title: "{{ notification_title }}"
     message: "{{ notification_message }}"
     data: >
-      {% set android_data = {"image": "%s"} | format(snapshot_access_file_path) %}
+      {% set android_data = {"image": "%s"} | format(snapshot_access_file_path) | "ttl": "0" | "priority": "high" %}
       {% set ios_data = {"attachment": {"url": "%s", "content_type": "JPEG"}} | format(snapshot_access_file_path) %}
       {{ ios_data if is_ios else android_data }}
