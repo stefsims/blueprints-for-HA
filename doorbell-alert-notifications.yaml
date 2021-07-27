@@ -1,6 +1,6 @@
 blueprint:
   name: Doorbell - Alert notifications
-  description: 'Make an announcement over Google devices when the doorbell is pushed and send a camera snapshot to your app.'
+  description: 'Make an announcement over Google devices using tts.cloud_say when the doorbell is pushed and send a camera snapshot to your app.'
 
   domain: automation
   input:
